@@ -1,74 +1,43 @@
-# VMAzure
+VMAzure – Minha Jornada no Gerenciamento de Máquinas Virtuais no Azure
 
-# 🚀 Gerenciamento de Máquinas Virtuais no Microsoft Azure
+Durante este desafio da DIO, explorei na prática como criar, gerenciar e monitorar Máquinas Virtuais (VMs) no Microsoft Azure.
+Decidi montar este repositório como um material de consulta pessoal, mas que também pode ajudar quem está começando a trabalhar com Azure.
 
-## 📝 Sobre o Projeto
+📝 O que eu aprendi
 
-Este repositório foi criado como parte do desafio prático da **DIO - Digital Innovation One**, com foco em **Azure Virtual Machines (VMs)**.  
-Aqui você encontrará **resumos**, **anotações**, **comandos úteis** e **dicas práticas** sobre o gerenciamento de VMs no Azure.
+Entendendo o conceito de VMs no Azure:
+O que são, como funcionam, tipos de tamanhos (SKU) e como escolher a região certa para implantação.
 
----
+Criando VMs de diferentes formas:
+Testei a criação via Portal do Azure, Azure CLI e até com PowerShell.
+Cada método tem suas vantagens dependendo do cenário.
 
-## 🎯 Objetivos de Aprendizagem
+Gerenciando as VMs:
+Descobri como iniciar, parar, reiniciar e até como redimensionar uma VM quando precisei de mais performance.
+Também mexi com discos adicionais (Data Disks) para testar armazenamento extra.
 
-✅ Aplicar na prática os conceitos aprendidos sobre **Azure VMs**  
-✅ Documentar o processo de forma clara e organizada  
-✅ Utilizar o **GitHub** como repositório público de documentação técnica  
+Configurando o acesso e conectividade:
+Configurei NSGs (Network Security Groups), abri portas para RDP e SSH, e configurei IPs públicos e privados.
 
----
+Automatizando o provisionamento:
+Aprendi um pouco de Infraestrutura como Código criando VMs com scripts de CLI e entendi o básico de ARM Templates e Bicep.
 
-## ☁️ Principais Tópicos Abordados
+Monitorando desempenho:
+Ativei o Azure Monitor, coletei métricas como uso de CPU, disco e memória, e até criei um dashboard simples no portal.
 
-### ✅ Conceitos Básicos de Azure VMs
-- O que é uma Máquina Virtual (VM)
-- Tipos de tamanhos (SKU) de VMs
-- Regiões e Zonas de disponibilidade
+Segurança:
+Experimentei o Azure Bastion para acesso seguro às VMs sem IP público e entendi o papel da Managed Identity.
 
-### ✅ Criação de VMs no Azure
-- Criação via **Portal**
-- Criação via **Azure CLI**
-- Criação via **PowerShell**
+💡 Dicas que funcionaram bem pra mim
 
-### ✅ Gerenciamento de VMs
-- Iniciar / Parar / Reiniciar VMs
-- Redimensionamento (Change Size)
-- Adicionar ou remover discos (OS Disk e Data Disk)
+Sempre que possível, automatize a criação das VMs (evita erros e ganho de tempo).
 
-### ✅ Conectividade
-- Configuração de **Network Security Groups (NSG)**
-- Conexão via **RDP (Windows)** ou **SSH (Linux)**
-- Atribuição de **IP Público** ou **Privado**
+Use tags nos recursos desde o início para facilitar a organização e o monitoramento de custos.
 
-### ✅ Automação
-- Criação de VMs via **script CLI**
-- Uso de **ARM Templates** e **Bicep**
+Habilite monitoramento e logs logo após criar a VM. Fica mais fácil diagnosticar problemas depois.
 
-### ✅ Monitoramento
-- Uso do **Azure Monitor**
-- Monitoramento de **CPU**, **Disco**, **Memória**
+📚 Fontes que me ajudaram muito
 
-### ✅ Segurança
-- Configuração de **Azure Bastion** para acesso seguro
-- Uso de **Managed Identity**
-- Boas práticas de segurança para VMs
+Documentação oficial: Gerenciar VMs no Azure
 
----
-
-## 📸 Capturas de Tela (Opcional)
-
-As capturas estão organizadas na pasta `/images`.
-
----
-
-## 🛠️ Recursos Úteis
-
-- [📚 Gerenciar VMs no Azure - Documentação Oficial](https://learn.microsoft.com/pt-br/azure/virtual-machines/)
-- [📚 Azure CLI VM Documentation](https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest)
-- [📚 Guia Markdown no GitHub](https://guides.github.com/features/mastering-markdown/)
-
----
-
-## ✅ Status do Projeto
-
-✔️ Projeto concluído como parte do desafio da **DIO**.
-
+Anotações feitas durante o curso na DIO
